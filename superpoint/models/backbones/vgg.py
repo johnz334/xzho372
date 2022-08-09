@@ -27,6 +27,7 @@ def vgg_backbone(inputs, **config):
         x = vgg_block(x, 64, 3, 'conv1_2', **params_conv)
         x = tfl.max_pooling2d(x, 2, 2, name='pool1', **params_pool)
 
+
         x = vgg_block(x, 64, 3, 'conv2_1', **params_conv)
         x = vgg_block(x, 64, 3, 'conv2_2', **params_conv)
         x = tfl.max_pooling2d(x, 2, 2, name='pool2', **params_pool)

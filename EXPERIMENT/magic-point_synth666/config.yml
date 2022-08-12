@@ -54,7 +54,7 @@ data:
   preprocessing:
     blur_size: 21
     resize:
-    - 120
+    - 160
     - 160
   primitives: all
   suffix: v6
